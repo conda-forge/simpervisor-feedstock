@@ -33,7 +33,6 @@ about:
   # xref: https://github.com/yuvipanda/simpervisor/pull/5
   license_file: LICENSE
   summary: Simple async process supervisor
-  doc_url: https://simpervisor.readthedocs.io
   dev_url: https://github.com/yuvipanda/simpervisor
 
 extra:
