@@ -11,11 +11,8 @@ Package license: BSD-3-Clause
 
 Feedstock license: BSD 3-Clause
 
-Summary: Jupyter server extension to supervise and proxy web services
+Summary: Simple async process supervisor
 
-Jupyter Server Proxy lets you run arbitrary external processes (such as
-RStudio, Shiny Server, syncthing, PostgreSQL, etc) alongside your notebook,
-and provide authenticated web access to them.
 
 
 Current build status
