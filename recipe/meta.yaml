@@ -32,12 +32,7 @@ about:
   # Vendoring the license file until the packages include it.
   # xref: https://github.com/yuvipanda/simpervisor/pull/5
   license_file: LICENSE
-  summary: Jupyter server extension to supervise and proxy web services
-  description: |
-    Jupyter Server Proxy lets you run arbitrary external processes (such as
-    RStudio, Shiny Server, syncthing, PostgreSQL, etc) alongside your notebook,
-    and provide authenticated web access to them.
-  doc_url: https://simpervisor.readthedocs.io
+  summary: Simple async process supervisor
   dev_url: https://github.com/yuvipanda/simpervisor
 
 extra:
