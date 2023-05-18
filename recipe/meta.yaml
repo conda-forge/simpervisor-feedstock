@@ -18,18 +18,21 @@ requirements:
   host:
     - python >=3.8
     - hatchling
+    - pip
   run:
     - python >=3.8
 
 test:
   imports:
     - simpervisor
+  commands:
+    - pip check
+  requires:
+    - pip
 
 about:
   home: https://github.com/yuvipanda/simpervisor
   license: BSD-3-Clause
-  # Vendoring the license file until the packages include it.
-  # xref: https://github.com/yuvipanda/simpervisor/pull/5
   license_file: LICENSE
   summary: Simple async process supervisor
   dev_url: https://github.com/yuvipanda/simpervisor
