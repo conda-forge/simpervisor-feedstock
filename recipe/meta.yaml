@@ -1,5 +1,5 @@
 {% set name = "simpervisor" %}
-{% set version = "0.4" %}
+{% set version = "1.0.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: cec79e13cdbd6edb04a5c98c1ff8d4bd9713e706c069226909a1ef0e89d393c5
+  sha256: 7eb87ca86d5e276976f5bb0290975a05d452c6a7b7f58062daea7d8369c823c1
 
 build:
   number: 0
@@ -16,21 +16,23 @@ build:
 
 requirements:
   host:
-    - python >=3
+    - python >=3.8
+    - hatchling
     - pip
-    - setuptools
   run:
-    - python >=3
+    - python >=3.8
 
 test:
   imports:
     - simpervisor
+  commands:
+    - pip check
+  requires:
+    - pip
 
 about:
   home: https://github.com/yuvipanda/simpervisor
   license: BSD-3-Clause
-  # Vendoring the license file until the packages include it.
-  # xref: https://github.com/yuvipanda/simpervisor/pull/5
   license_file: LICENSE
   summary: Simple async process supervisor
   dev_url: https://github.com/yuvipanda/simpervisor
