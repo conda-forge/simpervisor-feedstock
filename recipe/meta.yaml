@@ -16,11 +16,10 @@ build:
 
 requirements:
   host:
-    - python >=3
-    - pip
-    - setuptools
+    - python >=3.8
+    - hatchling
   run:
-    - python >=3
+    - python >=3.8
 
 test:
   imports:
